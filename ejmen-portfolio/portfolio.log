@@ -1,0 +1,14 @@
+
+> ejmen-portfolio@0.1.0 dev
+> next dev
+
+  ▲ Next.js 14.2.5
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+ ✓ Ready in 7.1s
+ ○ Compiling / ...
+ ✓ Compiled / in 9.5s (1292 modules)
+ GET / 200 in 9923ms
+ ✓ Compiled in 613ms (643 modules)
+ GET / 200 in 95ms

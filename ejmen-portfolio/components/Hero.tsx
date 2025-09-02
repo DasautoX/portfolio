@@ -201,7 +201,7 @@ export default function Hero() {
         </div>
 
         {/* Enhanced Scroll Indicator */}
-        <div className="absolute bottom-(-5) left-1/2 transform -translate-x-1/2 animate-fadeInUp" style={{ animationDelay: '1s' }}>
+        <div className="absolute bottom-(-) left-1/2 transform -translate-x-1/2 animate-fadeInUp" style={{ animationDelay: '1s' }}>
           <div 
             className="group cursor-pointer"
             onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
