@@ -43,18 +43,16 @@ export default function Contact() {
     setSubmitStatus('idle')
 
     try {
-      const response = await fetch('https://formspree.io/f/meojpqvg', {
+      const formPayload = new FormData()
+      formPayload.append('name', formData.name)
+      formPayload.append('email', formData.email)
+      formPayload.append('message', formData.message)
+      formPayload.append('_subject', `Portfolio Contact from ${formData.name}`)
+      formPayload.append('_captcha', 'false')
+
+      const response = await fetch('https://formsubmit.co/aymanubejdij@gmail.com', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          message: formData.message,
-          _replyto: formData.email,
-          _subject: `Portfolio Contact from ${formData.name}`,
-        }),
+        body: formPayload,
       })
 
       if (response.ok) {
